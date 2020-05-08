@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+{% extends 'basic_app/base.html' %}
+
+{% block header_block %}
+    <title>Relative URL</title>
+{% endblock header_block %}
+
+{% block body_block %}
+    <h1>Welcome to relative urls tempaltes!</h1>
+    <a href="{% url 'basic_app:other_page' %}">The other page.</a><br>
+    <a href="{% url 'admin:index' %}">Admin page!</a><br>
+    <a href="{% url 'index_page' %}">Link to index page.</a><br>
+{% endblock %}
